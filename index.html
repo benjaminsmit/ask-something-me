@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>AskSomething.me</title>
+		<meta name="description" content="The perfect virtual card game for people who want to get a level deeper in understanding each others thoughts and desires by having an open conversation.">
+		<meta name="keywords" content="card game, open conversation, mobile game, answer questions, get to know your friends">
+		<meta name="author" content="Benjamin Smit">
+		<meta charset="utf-8">
+		<meta name="theme-color" content="#990F02" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/game.css">
+		<link rel="stylesheet" href="assets/css/index.css">
+		<script type="text/javascript" src="assets/js/main.js"></script>
+		<script type="text/javascript" src="assets/js/cms.js"></script>
+		<script type="text/javascript" src="assets/js/game.js"></script>
+		<script type="text/javascript" src="assets/js/topicsQuestions.js"></script>
+	</head>
+	<body>
+		<nav id="menu">
+			<div id="CloseMenu" onclick="closeMenu()"> <!-- https://css-tricks.com/scale-svg/#aa-option-4-use-the-padding-bottom-hack-on-a-container -->
+					<svg class="closeMenuIcon" viewBox="0 0 24 24">
+						<path d="M0 0h24v24H0V0z" fill="none"/>
+						<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+					</svg>
+			</div>
+			<div class="menuBlock">
+				<a href="index.html" onclick="closeMenu()">HOME</a>
+				<a href="the-game.html" onclick="closeMenu()">START GAME</a>
+				<a href="#" onclick="closeMenu()">ROADMAP</a>
+				<a href="#" onclick="closeMenu()">CREDITS</a>
+				<a href="#" onclick="closeMenu()">CONTACT US</a>
+			</div>
+		</nav>
+		<div class="container">
+			<header class="header shadow">
+				<div class="headerLogo">
+					<svg  class="logoIcon" viewBox="0 0 256 256">
+						<g transform="translate(128 128) scale(0.72 0.72)">
+							<g 
+								style="stroke: none; 
+								stroke-width: 0; 
+								stroke-dasharray: none; 
+								stroke-linecap: butt; 
+								stroke-linejoin: miter; 
+								stroke-miterlimit: 10; 
+								fill: none; 
+								fill-rule: nonzero; 
+								opacity: 1;" 
+								transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)" >
+								<path 
+									d="M 52.29 50.553 c -1.104 0 -2 -0.896 -2 -2 v -4.766 c 0 -0.55 0.227 -1.077 0.627 -1.454 l 7.647 -7.22 c 1.522 -1.567 2.395 -3.714 2.395 -5.986 v -0.284 c 0 -2.358 -0.931 -4.563 -2.619 -6.209 c -1.688 -1.646 -3.925 -2.508 -6.279 -2.457 c -4.653 0.12 -8.439 4.115 -8.439 8.906 c 0 1.104 -0.896 2 -2 2 s -2 -0.896 -2 -2 c 0 -6.941 5.534 -12.73 12.336 -12.905 c 3.47 -0.095 6.707 1.187 9.175 3.591 c 2.468 2.405 3.827 5.628 3.827 9.074 v 0.284 c 0 3.319 -1.274 6.457 -3.588 8.835 l -7.081 6.688 v 3.904 C 54.29 49.657 53.395 50.553 52.29 50.553 z" 
+									style="
+										stroke: none; 
+										stroke-width: 5; 
+										stroke-dasharray: none; 
+										stroke-linecap: butt; 
+										stroke-linejoin: miter; 
+										stroke-miterlimit: 10; 
+										fill: rgba(205, 197, 180, 1); 
+										fill-rule: nonzero; 
+										opacity: 1;
+									" 
+									transform="matrix(1 0 0 1 0 0)" 
+									stroke-linecap="round" />
+								<path 
+									d="M 52.29 60.75 c -0.23 0 -0.46 -0.03 -0.681 -0.07 c -0.229 -0.05 -0.449 -0.12 -0.659 -0.2 c -0.21 -0.09 -0.41 -0.199 -0.601 -0.33 c -0.2 -0.119 -0.37 -0.27 -0.54 -0.43 c -0.649 -0.65 -1.02 -1.55 -1.02 -2.47 c 0 -0.23 0.02 -0.46 0.069 -0.69 c 0.04 -0.22 0.11 -0.439 0.2 -0.649 c 0.09 -0.221 0.19 -0.42 0.32 -0.61 s 0.27 -0.37 0.43 -0.53 c 0.17 -0.16 0.34 -0.31 0.54 -0.439 c 0.19 -0.12 0.391 -0.23 0.601 -0.32 c 0.21 -0.08 0.43 -0.15 0.659 -0.2 c 1.131 -0.229 2.341 0.15 3.15 0.96 c 0.17 0.16 0.31 0.34 0.44 0.53 c 0.13 0.19 0.229 0.39 0.319 0.61 c 0.09 0.21 0.16 0.43 0.2 0.649 c 0.05 0.23 0.07 0.46 0.07 0.69 c 0 0.92 -0.37 1.819 -1.03 2.47 C 54.109 60.37 53.21 60.75 52.29 60.75 z" 
+									style="
+										stroke: none; 
+										stroke-width: 5; 
+										stroke-dasharray: none; 
+										stroke-linecap: butt; 
+										stroke-linejoin: miter; 
+										stroke-miterlimit: 10; 
+										fill: rgba(205, 197, 180, 1); 
+										fill-rule: nonzero; 
+										opacity: 1;" 
+									transform=" matrix(1 0 0 1 0 0) " 
+									stroke-linecap="round" />
+								<path d="M 88 75.419 c -0.262 0 -0.524 -0.051 -0.774 -0.156 l -14.288 -6.004 c -6.146 4.034 -13.261 6.16 -20.647 6.16 c -20.793 0 -37.709 -16.916 -37.709 -37.709 C 14.581 16.917 31.497 0 52.29 0 S 90 16.917 90 37.709 c 0 7.385 -2.127 14.5 -6.16 20.647 l 6.004 14.288 c 0.314 0.749 0.146 1.614 -0.43 2.188 C 89.031 75.216 88.52 75.419 88 75.419 z M 52.29 4 C 33.703 4 18.581 19.122 18.581 37.709 S 33.703 71.419 52.29 71.419 c 6.936 0 13.602 -2.097 19.277 -6.063 c 0.563 -0.395 1.288 -0.47 1.92 -0.204 l 10.771 4.525 l -4.525 -10.77 c -0.266 -0.632 -0.188 -1.357 0.204 -1.92 C 83.903 51.309 86 44.643 86 37.709 C 86 19.122 70.878 4 52.29 4 z" 
+									style="stroke: none; stroke-width: 5; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; 
+									fill: rgba(205, 197, 180, 1); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+								<path d="M 2 90 c -0.521 0 -1.032 -0.203 -1.415 -0.586 c -0.575 -0.574 -0.745 -1.439 -0.43 -2.188 L 6.16 72.937 C 2.126 66.79 0 59.676 0 52.29 c 0 -8.133 2.549 -15.88 7.372 -22.401 c 0.657 -0.888 1.91 -1.076 2.797 -0.419 c 0.888 0.657 1.076 1.909 0.419 2.797 C 6.278 38.095 4 45.019 4 52.29 c 0 6.935 2.097 13.601 6.063 19.277 c 0.393 0.563 0.47 1.287 0.204 1.92 L 5.742 84.258 l 10.77 -4.525 c 0.632 -0.266 1.357 -0.189 1.92 0.204 C 24.11 83.903 30.776 86 37.709 86 c 5.96 0 11.818 -1.576 16.937 -4.558 c 0.957 -0.556 2.179 -0.232 2.735 0.722 c 0.556 0.955 0.232 2.18 -0.722 2.735 C 50.93 88.236 44.376 90 37.709 90 c -7.385 0 -14.5 -2.127 -20.647 -6.16 L 2.775 89.844 C 2.524 89.949 2.261 90 2 90 z" 
+									style="stroke: none; stroke-width: 5; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; 
+									fill: rgba(205, 197, 180, 1); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+							</g>
+						</g>
+					</svg>
+					<div class="logoText">AskSomething.me!</div>
+				</div>
+				<div id="OpenMenu" onclick="openMenu()"> <!-- https://css-tricks.com/scale-svg/#aa-option-4-use-the-padding-bottom-hack-on-a-container -->
+					<svg class="OpenMenuIcon" viewBox="0 0 24 24">
+						<path d="M0 0h24v24H0V0z" fill="none"/>
+						<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+					</svg>
+				</div>
+			</header>
+			<main>
+				<section class="heroSection" id="hero">
+					<span role="img" aria-label="Group of friends talking, laughing and having a fun conversation"> </span>
+					<div class="hero">
+						<div class="heroTextBox center">
+							<h1 class="heroTitle" id="homeTitle">Have the best<br>guided conversations!</h1>
+							<button class="buttonPrimary" id="heroCTA" type="button" onclick="window.location.href='the-game.html';">Play the game!</button>
+						</div>
+					</div>
+				</section>
+				<section id="explainGame">
+					<h2>Guided conversations</h2>
+					<p>With this game you select a topic and you will get questions presented where you can talk about. Just like an 'off-line' card game.</p>
+				</section>
+				
+				
+			</main>
+			<footer>
+				<p>AskSomething.me &copy; 2022</p>
+			</footer>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-window">
+					<div class="modal-header">
+						<span class="close" onclick="hideModal()">&times;</span>
+						<h2 class="modal-title" id="modalTitle">Title</h2>
+					</div>
+					<div class="modal-body">
+						<div class="modal-content center">
+							<p id="modalMessage">Some text</p>
+							<div class="blockView center" id="questionsEngaged">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script>
+		console.log("Created by Benjamin Smit")
+		console.log("contact: benjamin.smit@gmail.com")
+	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyD2-tkjow-kKV5bl1kSCQUrNv-NdZWyCEY",
+			authDomain: "ask-something-me.firebaseapp.com",
+			projectId: "ask-something-me",
+			storageBucket: "ask-something-me.appspot.com",
+			messagingSenderId: "206998538469",
+			appId: "1:206998538469:web:5554d08de52d6a28beac0c",
+			measurementId: "G-HTTNNXPWVF"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+    </script>
+	</body>
+</html>
