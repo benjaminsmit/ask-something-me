@@ -1,0 +1,22 @@
+.heroSection {
+	padding-inline : 0em;
+	margin-top: -1.2rem;
+	background-image: url('/assets/images/talking-friends.jpg');
+	background-size: cover;
+	height: 95vh;
+}
+.hero {
+	position: relative;
+	padding-top: 50%;
+}
+.heroTextBox {
+	max-width: 20rem;
+	border-radius: 1rem;
+	background-color: var(--black);
+	padding-inline: 1em;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+.heroTitle {
+	padding-inline: 1em;
+}
